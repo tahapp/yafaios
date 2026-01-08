@@ -29,9 +29,7 @@ struct User {
 ## Code
 ```swift
 let name = "Taha"
-
-##
-
+```
 Or visually:
 
 ```html
