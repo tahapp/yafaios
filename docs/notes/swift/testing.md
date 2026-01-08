@@ -32,7 +32,6 @@ let name = "Taha"
 
 Or visually:
 
-html
 <span style="color: #0066cc; font-weight: bold;">Code:</span>
 
 
