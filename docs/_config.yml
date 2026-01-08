@@ -9,6 +9,7 @@ markdown: kramdown
 permalink: pretty
 
 header_pages:
-  - swift.md
-  - uikit.md
+  - notes/swift/swift1Notes.md
+  - notes/swift/testing.md
+  - notes/UIKit/uikit100Notes.md
   - redirects/oauth.md
