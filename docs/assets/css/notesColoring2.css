@@ -22,3 +22,27 @@ h2 {
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 0.3rem;
 }
+
+/* Callouts */
+.warning, .tip, .note {
+  border-left: 4px solid;
+  padding: 12px 16px;
+  margin: 24px 0;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+.warning {
+  border-color: #d1242f;
+  background: #fff5f5;
+}
+
+.tip {
+  border-color: #2da44e;
+  background: #f6fff8;
+}
+
+.note {
+  border-color: #0969da;
+  background: #f5f9ff;
+}
