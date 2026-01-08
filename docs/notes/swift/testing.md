@@ -32,9 +32,9 @@ let name = "Taha"
 
 Or visually:
 
-```html
+html
 <span style="color: #0066cc; font-weight: bold;">Code:</span>
-```
+
 
 1. First rule
 2. Second rule
