@@ -25,13 +25,16 @@ struct User {
     let id: Int
 }
 ```
-
+## Code
+```swift
+let name = "Taha"
+```
 
 Or visually:
 
 ```html
 <span style="color: #0066cc; font-weight: bold;">Code:</span>
-
+```
 
 1. First rule
 2. Second rule
