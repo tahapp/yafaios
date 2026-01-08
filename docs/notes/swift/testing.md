@@ -1,7 +1,10 @@
 
 **important**
+
 *note*
+
 ***very important***
+
 <span style="color: red;">Important rule</span>
 <span style="color: gray;">Note: This is subtle behavior</span>
 
