@@ -1,4 +1,4 @@
-permalink: /notes/swift/testing.md
+
 **important**
 
 *note*
