@@ -6,10 +6,7 @@ title: Home
 Welcome. This site is a notes-style knowledge base for Swift and UIKit.
 
 ## Start here
-- [Swift Notes](/swift/)
-- [UIKit Notes](/uikit/)
-- [Redirect URLs](/redirects/oauth/)
+- [Swift Notes](docs/notes/swift/100-notes.md)
+- [UIKit Notes](docs/notes/uikit/100_notes.md)
+- [Redirect URLs](docs/redirects/oauth/)
 
-## Latest notes
-- [Swift: Value vs Reference](/notes/swift/0001-value-vs-reference/)
-- [UIKit: Auto Layout Mental Model](/notes/uikit/0001-autolayout-mental-model/)
