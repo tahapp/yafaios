@@ -7,6 +7,6 @@ title: UIKit
 
 A curated set of UIkit rules, patterns, and pitfalls.
 
-- [UIKit Notes (100)](notes/UIkit/uikit100Notes.md)
+- [UIKit Notes (100)](notes/UIKit/uikit100Notes.md)
 
 
