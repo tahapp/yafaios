@@ -43,13 +43,15 @@ Or visually:
 
 
 
-<div style="border-left: 4px solid red; padding-left: 10px;">
-<strong>Warning:</strong> This crashes at runtime.
+<div class="warning">
+  <strong>Warning:</strong> This crashes at runtime.
 </div>
 
-
-
-
-<div style="border-left: 4px solid green; padding-left: 10px;">
-<strong>Tip:</strong> Prefer value types.
+<div class="tip">
+  <strong>Tip:</strong> Prefer value types.
 </div>
+
+<div class="note">
+  <strong>Note:</strong> ARC applies only to class instances.
+</div>
+
