@@ -1,15 +1,4 @@
-title: YafaiOS Notes
-description: Swift + UIKit notes, tips, and patterns.
-theme: minima
-sass:
-  style: compressed
-
-# Optional but helpful
-markdown: kramdown
-permalink: pretty
-
 header_pages:
-  - notes/swift/swift1Notes.md
-  - notes/swift/testing.md
-  - notes/UIKit/uikit100Notes.md
-  - redirects/oauth.md
+  - index.md
+  - swift.md
+  - UIKit.md
