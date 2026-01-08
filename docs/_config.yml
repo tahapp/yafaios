@@ -1,6 +1,8 @@
 title: YafaiOS Notes
 description: Swift + UIKit notes, tips, and patterns.
 theme: minima
+sass:
+  style: compressed
 
 # Optional but helpful
 markdown: kramdown
