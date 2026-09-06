@@ -1,0 +1,7 @@
+---
+layout: null
+permalink: /search.json
+---
+{% assign notes = site.pages | where: 'is_note', true %}[
+{% for note in notes %}{"title":{{ note.title | jsonify }},"url":{{ note.url | relative_url | jsonify }},"category":{{ note.category | jsonify }},"topic":{{ note.topic | jsonify }},"text":{{ note.content | markdownify | strip_html | normalize_whitespace | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+]

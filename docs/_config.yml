@@ -1,4 +1,22 @@
-header_pages:
-  
-  - swift.md
-  - uikit.md
+theme: null
+title: YafaiOS
+description: Deep notes on Swift, UIKit, and Apple's development frameworks.
+url: https://yafaios.com
+baseurl: ""
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+plugins:
+  - jekyll-redirect-from
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+defaults:
+  - scope:
+      path: "notes"
+    values:
+      layout: note
+      is_note: true

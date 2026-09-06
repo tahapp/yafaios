@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>{% include head.html %}</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}">Yafai<span>OS</span></a>
+  <nav aria-label="Primary">{% for item in site.data.navigation %}
+    <a href="{{ item.url | relative_url }}"{% if page.url == item.url or page.category == item.category and item.category %} aria-current="page"{% endif %}>{{ item.title }}</a>
+  {% endfor %}</nav>
+  <a class="search-link" href="{{ '/search/' | relative_url }}">Search notes <span aria-hidden="true">↗</span></a>
+</header>
+<div class="workspace">
+  <aside class="sidebar">
+    <details open>
+      <summary>Browse the notebook</summary>
+      <nav aria-label="Topics">
+        <a href="{{ '/' | relative_url }}">Overview</a>
+        {% assign notes = site.pages | where: 'is_note', true %}
+        {% for item in site.data.navigation %}{% if item.category %}
+        <div class="sidebar-group">
+          <a class="group-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% assign category_notes = notes | where: 'category', item.category %}
+          {% assign topics = category_notes | group_by: 'topic' | sort: 'name' %}
+          {% for topic in topics %}
+          <a class="topic-link" href="{{ item.url | relative_url }}#{{ topic.name | slugify }}">{{ topic.name | escape }} <span>{{ topic.items.size }}</span></a>
+          {% endfor %}
+        </div>
+        {% endif %}{% endfor %}
+      </nav>
+      <p class="sidebar-caption">An engineering notebook<br>for Apple development.</p>
+    </details>
+  </aside>
+  <main id="main" tabindex="-1">{{ content }}</main>
+</div>
+<footer>© {{ site.time | date: '%Y' }} YafaiOS</footer>
+</body>
+</html>
