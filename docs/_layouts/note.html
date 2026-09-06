@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article>
+<header class="page-heading">
+<p class="eyebrow">{% for item in site.data.navigation %}{% if item.category == page.category %}<a href="{{ item.url | relative_url }}">{{ page.category | escape }}</a>{% endif %}{% endfor %} / {{ page.topic | escape }}</p>
+<h1>{{ page.title | escape }}</h1>
+{% if page.description %}<p class="lede">{{ page.description | escape }}</p>{% endif %}
+</header>
+<nav class="on-this-page" aria-label="On this page" hidden></nav>
+<div class="prose note-content">{{ content }}</div>
+{% assign related = site.pages | where: 'is_note', true | where: 'category', page.category | where: 'topic', page.topic | sort: 'title' %}
+{% if related.size > 1 %}<nav class="related" aria-label="Related notes"><h2>In this topic</h2><ul>{% for note in related %}{% unless note.url == page.url %}<li><a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a></li>{% endunless %}{% endfor %}</ul></nav>{% endif %}
+</article>

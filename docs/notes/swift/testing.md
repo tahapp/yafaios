@@ -1,3 +1,12 @@
+---
+layout: note
+title: Testing & Experiments
+permalink: /notes/swift/testing.html
+category: Swift
+topic: Experiments
+is_note: true
+description: Experiments with formatting, Swift code, and educational callouts.
+---
 
 **important**
 

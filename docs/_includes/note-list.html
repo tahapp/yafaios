@@ -1,0 +1,1 @@
+<ul class="note-list">{% for note in include.notes limit: include.limit %}<li><a href="{{ note.url | relative_url }}"><span>{{ note.title | escape }}</span><span aria-hidden="true">↗</span></a>{% if note.description %}<p>{{ note.description | escape }}</p>{% endif %}</li>{% endfor %}</ul>

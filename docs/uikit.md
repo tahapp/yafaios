@@ -1,12 +1,7 @@
 ---
-layout: page
+layout: category
 title: UIKit
+category: UIKit
+permalink: /uikit.html
+description: A curated set of UIKit rules, patterns, and pitfalls.
 ---
-
-## Swift Notes
-
-A curated set of UIkit rules, patterns, and pitfalls.
-
-- [UIKit Notes (100)](notes/UIKit/uikit100Notes.md)
-
-

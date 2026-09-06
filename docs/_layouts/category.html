@@ -1,0 +1,11 @@
+---
+layout: page
+---
+{{ content }}
+{% assign notes = site.pages | where: 'is_note', true | where: 'category', page.category %}
+{% assign topics = notes | group_by: 'topic' | sort: 'name' %}
+{% for topic in topics %}
+<section class="topic-section" id="{{ topic.name | slugify }}"><h2>{{ topic.name | escape }} <span class="count">{{ topic.items.size }}</span></h2>
+{% assign topic_notes = topic.items | sort: 'title' %}
+{% include note-list.html notes=topic_notes %}</section>
+{% else %}<p class="empty">No notes published here yet.</p>{% endfor %}

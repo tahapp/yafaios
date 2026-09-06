@@ -1,0 +1,14 @@
+- title: Swift
+  url: /swift.html
+  category: Swift
+  description: Language rules, patterns, and pitfalls.
+- title: UIKit
+  url: /uikit.html
+  category: UIKit
+  description: Views, layout, drawing, and interaction.
+- title: Frameworks
+  url: /frameworks/
+  category: Frameworks
+  description: Apple's frameworks, from layers to rendering.
+- title: About
+  url: /about/
